@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08821042-B53C-45CD-A2A3-01AECC3A51DB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GunkarSogutma</RootNamespace>
+    <AssemblyName>GunkarSogutma</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Fotograflar\12063759_1639446322992237_4632835213619818771_n.jpg" />
+    <Content Include="Fotograflar\buz.jpg" />
+    <Content Include="Fotograflar\hakk.png" />
+    <Content Include="Fotograflar\hkk.png" />
+    <Content Include="fotoimage\buzhane.jpg" />
+    <Content Include="Fotograflar\GunkarSogutmaJpg.PNG" />
+    <Content Include="fotoimage\kasapReyonu.jpg" />
+    <Content Include="fotoimage\morg.jpg" />
+    <Content Include="fotoimage\pastaborek.jpg" />
+    <Content Include="fotoimage\sutlukler.jpg" />
+    <Content Include="fotoimage\zeytinReyonu.jpg" />
+    <Content Include="GirisYap.aspx" />
+    <Content Include="Hakkimizda.aspx" />
+    <Content Include="Images\2014410151537309-2.jpg" />
+    <Content Include="Images\amortisorlu.jpg" />
+    <Content Include="Images\amortisorlu2.jpg" />
+    <Content Include="Images\bufe.jpg" />
+    <Content Include="Images\bufe2.jpg" />
+    <Content Include="Images\bufe3.jpg" />
+    <Content Include="Images\bufe4.jpg" />
+    <Content Include="Images\buzlusu.JPG" />
+    <Content Include="Images\buzlusu2.jpg" />
+    <Content Include="Images\buzlusu3.jpg" />
+    <Content Include="Images\buzlusu4.jpg" />
+    <Content Include="Images\buzlusu5.jpg" />
+    <Content Include="Images\defreeze-cihazlar.jpg" />
+    <Content Include="Images\dondurma.jpg" />
+    <Content Include="Images\dondurma1.jpg" />
+    <Content Include="Images\dondurma2.JPG" />
+    <Content Include="Images\dondurma3.jpeg" />
+    <Content Include="Images\dondurma4.JPG" />
+    <Content Include="Images\dondurma5.jpg" />
+    <Content Include="Images\Dorinkompressör.jpg" />
+    <Content Include="Images\eksikırk.jpg" />
+    <Content Include="Images\emrekokompressor.jpeg" />
+    <Content Include="Images\evaporator.jpg" />
+    <Content Include="Images\evaporator2.jpg" />
+    <Content Include="Images\evaporator3.jpg" />
+    <Content Include="Images\havuzreyonu.jpg" />
+    <Content Include="Images\havuzreyonu2.jpg" />
+    <Content Include="Images\havuzreyonu3.jpg" />
+    <Content Include="Images\havuzreyonu4.jpg" />
+    <Content Include="Images\havuzreyonu5.JPG" />
+    <Content Include="Images\icebuilder_cutaway.jpg" />
+    <Content Include="Images\imalat.jpg" />
+    <Content Include="Images\imalat2.jpg" />
+    <Content Include="Images\imalat3.png" />
+    <Content Include="Images\kapakliDolab.jpg" />
+    <Content Include="Images\KapakliSutlukDolabi.jpg" />
+    <Content Include="Images\kasapppp.jpg" />
+    <Content Include="Images\kasapreyonu.jpg" />
+    <Content Include="Images\kasapreyonu2.jpg" />
+    <Content Include="Images\kasapreyonu3.jpg" />
+    <Content Include="Images\kondenser.jpg" />
+    <Content Include="Images\kondenser2.jpg" />
+    <Content Include="Images\konteyner.jpg" />
+    <Content Include="Images\kopenhag.jpg" />
+    <Content Include="Images\kumpirwaffle.jpeg" />
+    <Content Include="Images\kumpirwaffle2.jpeg" />
+    <Content Include="Images\maneurop.jpg" />
+    <Content Include="Images\maneurop2.jpg" />
+    <Content Include="Images\morg1.jpg" />
+    <Content Include="Images\morg2.jpg" />
+    <Content Include="Images\morg3.jpg" />
+    <Content Include="Images\morg4.jpg" />
+    <Content Include="Images\onuacik.png" />
+    <Content Include="Images\OnuAcikSutlukDolabi.jpg" />
+    <Content Include="Images\pastane.png" />
+    <Content Include="Images\pastane2.jpg" />
+    <Content Include="Images\pastane3.jpg" />
+    <Content Include="Images\pastane4.jpg" />
+    <Content Include="Images\pastane5.png" />
+    <Content Include="Images\pastane6.jpg" />
+    <Content Include="Images\recel.jpg" />
+    <Content Include="Images\recellik.jpg" />
+    <Content Include="Images\recellik2.JPG" />
+    <Content Include="Images\sarkuteri.jpg" />
+    <Content Include="Images\soguk-hava-deposu-1.jpg" />
+    <Content Include="Images\soguk-hava-deposu-raflari3.jpg" />
+    <Content Include="Images\soguk-hava-deposu.jpg" />
+    <Content Include="Images\soguk-oda.png" />
+    <Content Include="Images\sogukhavadeposu.jpg" />
+    <Content Include="Images\sogukhavadeposu3.jpg" />
+    <Content Include="Images\sogutmaEkipmani.JPG" />
+    <Content Include="Images\sogutmaekipmani2.JPG" />
+    <Content Include="Images\sogutmahavadeposu5.jpg" />
+    <Content Include="Images\Soklama.jpeg" />
+    <Content Include="Images\soklama1.JPG" />
+    <Content Include="Images\soklama2.jpg" />
+    <Content Include="Images\soklama3.jpg" />
+    <Content Include="Images\soğukhavaa.jpg" />
+    <Content Include="Images\Surgulu.jpg" />
+    <Content Include="Images\Surgulu2.jpg" />
+    <Content Include="Images\vtipikondenser.png" />
+    <Content Include="Images\wafflekumpir3.jpg" />
+    <Content Include="Images\wafflekumpir4.jpg" />
+    <Content Include="Images\wafflekumpir5.jpg" />
+    <Content Include="Images\wafflekumpir6.jpg" />
+    <Content Include="Images\wafflekumpir7.jpg" />
+    <Content Include="Images\wafflekumpir8.jpg" />
+    <Content Include="Images\zeytinlik.jpg" />
+    <Content Include="Images\zeytinlik2.jpg" />
+    <Content Include="Images\zeytinlik3.jpg" />
+    <Content Include="Images\zeytinlik4.jpg" />
+    <Content Include="Listeleme.aspx" />
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="packages.config" />
+    <Content Include="ProjeEkle.aspx" />
+    <Content Include="ReferansEkle.aspx" />
+    <Content Include="Referanslarimiz.aspx" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Servis.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="YoneticiHakkimizda.aspx" />
+    <Content Include="YoneticiPaneli.aspx" />
+    <Content Include="YoneticiServis.aspx" />
+    <Content Include="Yoneticiİletisim.aspx" />
+    <Content Include="İletisim.aspx" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Fotograflar\buzhane.jpg" />
+    <Content Include="Fotograflar\kasapReyonu.jpg" />
+    <Content Include="Fotograflar\morg.jpg" />
+    <Content Include="Fotograflar\pastaborek.jpg" />
+    <Content Include="Fotograflar\sutlukler.jpg" />
+    <Content Include="Fotograflar\zeytinReyonu.jpg" />
+    <Content Include="Projelerimiz.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Urunler.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GGUrunler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GirisPanel.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GirisYap.aspx.cs">
+      <DependentUpon>GirisYap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GirisYap.aspx.designer.cs">
+      <DependentUpon>GirisYap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GKategoriler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GProje.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GReferans.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GUrunler.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Listeleme.aspx.cs">
+      <DependentUpon>Listeleme.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Listeleme.aspx.designer.cs">
+      <DependentUpon>Listeleme.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjeEkle.aspx.cs">
+      <DependentUpon>ProjeEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjeEkle.aspx.designer.cs">
+      <DependentUpon>ProjeEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projelerimiz.aspx.cs">
+      <DependentUpon>Projelerimiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projelerimiz.aspx.designer.cs">
+      <DependentUpon>Projelerimiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReferansEkle.aspx.cs">
+      <DependentUpon>ReferansEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReferansEkle.aspx.designer.cs">
+      <DependentUpon>ReferansEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Referanslarimiz.aspx.cs">
+      <DependentUpon>Referanslarimiz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Referanslarimiz.aspx.designer.cs">
+      <DependentUpon>Referanslarimiz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servis.aspx.cs">
+      <DependentUpon>Servis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Servis.aspx.designer.cs">
+      <DependentUpon>Servis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Urunler.aspx.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Urunler.aspx.designer.cs">
+      <DependentUpon>Urunler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiHakkimizda.aspx.cs">
+      <DependentUpon>YoneticiHakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiHakkimizda.aspx.designer.cs">
+      <DependentUpon>YoneticiHakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiPaneli.aspx.cs">
+      <DependentUpon>YoneticiPaneli.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiPaneli.aspx.designer.cs">
+      <DependentUpon>YoneticiPaneli.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YoneticiServis.aspx.cs">
+      <DependentUpon>YoneticiServis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YoneticiServis.aspx.designer.cs">
+      <DependentUpon>YoneticiServis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yoneticiİletisim.aspx.cs">
+      <DependentUpon>Yoneticiİletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yoneticiİletisim.aspx.designer.cs">
+      <DependentUpon>Yoneticiİletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="İletisim.aspx.cs">
+      <DependentUpon>İletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="İletisim.aspx.designer.cs">
+      <DependentUpon>İletisim.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ProjeFotoRes\" />
+    <Folder Include="Referanslarimiz\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11505</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:11505/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="GunkarSogutmaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="GGUrunler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UrunAdi" Type="nvarchar(max)" />
+          <Property Name="kategoriId" Type="int" />
+          <Property Name="UrunResimYolu" Type="nvarchar(max)" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'GunkarSogutma.dbo.GirisPanel' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="GirisPanel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+          <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="GKategoriler">
+          <Key>
+            <PropertyRef Name="kategoriId" />
+          </Key>
+          <Property Name="kategoriId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KategoriAdi" Type="nvarchar(max)" />
+          <Property Name="KategoriResim" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="GProje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ProjeAdi" Type="nvarchar(max)" />
+          <Property Name="ProjeFotosu" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="GReferans">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ReferansAdı" Type="nvarchar(max)" />
+          <Property Name="ReferansFotosu" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="GUrunler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UrunAdi" Type="nvarchar(max)" />
+          <Property Name="MkareFiyat" Type="nvarchar(max)" />
+          <Property Name="UrunId" Type="int" />
+          <Property Name="UrunResimYolu" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="GunkarSogutmaModelStoreContainer">
+          <EntitySet Name="GGUrunler" EntityType="Self.GGUrunler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GKategoriler" EntityType="Self.GKategoriler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GProje" EntityType="Self.GProje" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GReferans" EntityType="Self.GReferans" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GUrunler" EntityType="Self.GUrunler" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="GirisPanel" EntityType="Self.GirisPanel" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [GirisPanel].[ID] AS [ID], 
+    [GirisPanel].[KullaniciAdi] AS [KullaniciAdi], 
+    [GirisPanel].[Sifre] AS [Sifre]
+    FROM [dbo].[GirisPanel] AS [GirisPanel]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="GunkarSogutmaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="GReferans">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ReferansAdı" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ReferansFotosu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GUrunler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MkareFiyat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UrunId" Type="Int32" />
+          <Property Name="UrunResimYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GirisPanel">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityContainer Name="GunkarSogutmaEntities10" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="GReferans" EntityType="Self.GReferans" />
+          <EntitySet Name="GUrunler" EntityType="Self.GUrunler" />
+          <EntitySet Name="GirisPanel" EntityType="Self.GirisPanel" />
+          <EntitySet Name="GProje" EntityType="GunkarSogutmaModel.GProje" />
+          <EntitySet Name="GGUrunler" EntityType="GunkarSogutmaModel.GGUrunler" />
+          <EntitySet Name="GKategoriler" EntityType="GunkarSogutmaModel.GKategoriler" />
+        </EntityContainer>
+        <EntityType Name="GProje">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ProjeAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ProjeFotosu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GGUrunler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="kategoriId" Type="Int32" />
+          <Property Name="UrunResimYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="GKategoriler">
+          <Key>
+            <PropertyRef Name="kategoriId" />
+          </Key>
+          <Property Name="kategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KategoriAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="KategoriResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="GunkarSogutmaModelStoreContainer" CdmEntityContainer="GunkarSogutmaEntities10">
+          <EntitySetMapping Name="GReferans">
+            <EntityTypeMapping TypeName="GunkarSogutmaModel.GReferans">
+              <MappingFragment StoreEntitySet="GReferans">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ReferansAdı" ColumnName="ReferansAdı" />
+                <ScalarProperty Name="ReferansFotosu" ColumnName="ReferansFotosu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GUrunler">
+            <EntityTypeMapping TypeName="GunkarSogutmaModel.GUrunler">
+              <MappingFragment StoreEntitySet="GUrunler">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+                <ScalarProperty Name="MkareFiyat" ColumnName="MkareFiyat" />
+                <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+                <ScalarProperty Name="UrunResimYolu" ColumnName="UrunResimYolu" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GirisPanel">
+            <EntityTypeMapping TypeName="GunkarSogutmaModel.GirisPanel">
+              <MappingFragment StoreEntitySet="GirisPanel">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+                <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GProje">
+            <EntityTypeMapping TypeName="GunkarSogutmaModel.GProje">
+              <MappingFragment StoreEntitySet="GProje">
+                <ScalarProperty Name="ProjeFotosu" ColumnName="ProjeFotosu" />
+                <ScalarProperty Name="ProjeAdi" ColumnName="ProjeAdi" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GGUrunler">
+            <EntityTypeMapping TypeName="GunkarSogutmaModel.GGUrunler">
+              <MappingFragment StoreEntitySet="GGUrunler">
+                <ScalarProperty Name="UrunResimYolu" ColumnName="UrunResimYolu" />
+                <ScalarProperty Name="kategoriId" ColumnName="kategoriId" />
+                <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GKategoriler">
+            <EntityTypeMapping TypeName="GunkarSogutmaModel.GKategoriler">
+              <MappingFragment StoreEntitySet="GKategoriler">
+                <ScalarProperty Name="KategoriResim" ColumnName="KategoriResim" />
+                <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+                <ScalarProperty Name="kategoriId" ColumnName="kategoriId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

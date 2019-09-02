@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GunkarSogutmaModelStoreContainer" CdmEntityContainer="GunkarSogutmaEntities10">
+    <EntitySetMapping Name="GReferans">
+      <EntityTypeMapping TypeName="GunkarSogutmaModel.GReferans">
+        <MappingFragment StoreEntitySet="GReferans">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ReferansAdı" ColumnName="ReferansAdı" />
+          <ScalarProperty Name="ReferansFotosu" ColumnName="ReferansFotosu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GUrunler">
+      <EntityTypeMapping TypeName="GunkarSogutmaModel.GUrunler">
+        <MappingFragment StoreEntitySet="GUrunler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="MkareFiyat" ColumnName="MkareFiyat" />
+          <ScalarProperty Name="UrunId" ColumnName="UrunId" />
+          <ScalarProperty Name="UrunResimYolu" ColumnName="UrunResimYolu" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GirisPanel">
+      <EntityTypeMapping TypeName="GunkarSogutmaModel.GirisPanel">
+        <MappingFragment StoreEntitySet="GirisPanel">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KullaniciAdi" ColumnName="KullaniciAdi" />
+          <ScalarProperty Name="Sifre" ColumnName="Sifre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GProje">
+      <EntityTypeMapping TypeName="GunkarSogutmaModel.GProje">
+        <MappingFragment StoreEntitySet="GProje">
+          <ScalarProperty Name="ProjeFotosu" ColumnName="ProjeFotosu" />
+          <ScalarProperty Name="ProjeAdi" ColumnName="ProjeAdi" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GGUrunler">
+      <EntityTypeMapping TypeName="GunkarSogutmaModel.GGUrunler">
+        <MappingFragment StoreEntitySet="GGUrunler">
+          <ScalarProperty Name="UrunResimYolu" ColumnName="UrunResimYolu" />
+          <ScalarProperty Name="kategoriId" ColumnName="kategoriId" />
+          <ScalarProperty Name="UrunAdi" ColumnName="UrunAdi" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GKategoriler">
+      <EntityTypeMapping TypeName="GunkarSogutmaModel.GKategoriler">
+        <MappingFragment StoreEntitySet="GKategoriler">
+          <ScalarProperty Name="KategoriResim" ColumnName="KategoriResim" />
+          <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+          <ScalarProperty Name="kategoriId" ColumnName="kategoriId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,48 @@
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\VBCSCompiler.exe
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\csc.exe
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\vbc.exe
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\GunkarSogutma.dll.config
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\GunkarSogutma.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\GunkarSogutma.pdb
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\EntityFramework.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\EntityFramework.SqlServer.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\EntityFramework.xml
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\EntityFramework.SqlServer.xml
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\obj\Debug\GunkarSogutma.dll
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\obj\Debug\GunkarSogutma.pdb
+C:\Users\Oquzhan21\Desktop\GunkarSogutma\GunkarSogutma\obj\Debug\GunkarSogutma.csprojResolveAssemblyReference.cache
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\csc.exe
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\vbc.exe
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\VBCSCompiler.exe
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\GunkarSogutma.dll.config
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\GunkarSogutma.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\GunkarSogutma.pdb
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\EntityFramework.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\EntityFramework.SqlServer.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\EntityFramework.xml
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\EntityFramework.SqlServer.xml
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\obj\Debug\GunkarSogutma.csprojResolveAssemblyReference.cache
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\obj\Debug\GunkarSogutma.dll
+C:\Users\Oquzhan21\Desktop\Projelerim Güncel\GunkarSogutma\GunkarSogutma\obj\Debug\GunkarSogutma.pdb

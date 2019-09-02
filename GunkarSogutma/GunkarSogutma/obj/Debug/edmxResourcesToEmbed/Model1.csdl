@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GunkarSogutmaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GReferans">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReferansAdı" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ReferansFotosu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GUrunler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MkareFiyat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UrunId" Type="Int32" />
+    <Property Name="UrunResimYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GirisPanel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KullaniciAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="GunkarSogutmaEntities10" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GReferans" EntityType="Self.GReferans" />
+    <EntitySet Name="GUrunler" EntityType="Self.GUrunler" />
+    <EntitySet Name="GirisPanel" EntityType="Self.GirisPanel" />
+    <EntitySet Name="GProje" EntityType="GunkarSogutmaModel.GProje" />
+    <EntitySet Name="GGUrunler" EntityType="GunkarSogutmaModel.GGUrunler" />
+    <EntitySet Name="GKategoriler" EntityType="GunkarSogutmaModel.GKategoriler" />
+  </EntityContainer>
+  <EntityType Name="GProje">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProjeAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProjeFotosu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GGUrunler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UrunAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="kategoriId" Type="Int32" />
+    <Property Name="UrunResimYolu" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="GKategoriler">
+    <Key>
+      <PropertyRef Name="kategoriId" />
+    </Key>
+    <Property Name="kategoriId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriAdi" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="KategoriResim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

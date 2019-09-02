@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GunkarSogutmaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="GGUrunler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunAdi" Type="nvarchar(max)" />
+    <Property Name="kategoriId" Type="int" />
+    <Property Name="UrunResimYolu" Type="nvarchar(max)" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'GunkarSogutma.dbo.GirisPanel' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="GirisPanel">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KullaniciAdi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sifre" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="GKategoriler">
+    <Key>
+      <PropertyRef Name="kategoriId" />
+    </Key>
+    <Property Name="kategoriId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KategoriAdi" Type="nvarchar(max)" />
+    <Property Name="KategoriResim" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="GProje">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProjeAdi" Type="nvarchar(max)" />
+    <Property Name="ProjeFotosu" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="GReferans">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ReferansAdı" Type="nvarchar(max)" />
+    <Property Name="ReferansFotosu" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="GUrunler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UrunAdi" Type="nvarchar(max)" />
+    <Property Name="MkareFiyat" Type="nvarchar(max)" />
+    <Property Name="UrunId" Type="int" />
+    <Property Name="UrunResimYolu" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="GunkarSogutmaModelStoreContainer">
+    <EntitySet Name="GGUrunler" EntityType="Self.GGUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GKategoriler" EntityType="Self.GKategoriler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GProje" EntityType="Self.GProje" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GReferans" EntityType="Self.GReferans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GUrunler" EntityType="Self.GUrunler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="GirisPanel" EntityType="Self.GirisPanel" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GirisPanel].[ID] AS [ID], 
+    [GirisPanel].[KullaniciAdi] AS [KullaniciAdi], 
+    [GirisPanel].[Sifre] AS [Sifre]
+    FROM [dbo].[GirisPanel] AS [GirisPanel]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
